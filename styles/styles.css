@@ -4,6 +4,25 @@ main {
     margin: 0 auto;
 }
 
+/* Nav rule with background-color and padding */
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+/* Nav a rule with color, padding, and display: block */
+nav a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Optional: nav a hover for better UX */
+nav a:hover {
+    background-color: #555;
+}
+
 /* Aside element styling */
 aside {
     width: 300px;
@@ -20,14 +39,15 @@ aside img {
     height: auto;
 }
 
-/* Profile image styling using parent selector */
+/* Main img rule with required declarations */
 main img {
     width: 150px;
     height: auto;
-    border-radius: 8px;
-    /* Optional: adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: adds subtle shadow */
+    border: 2px solid #333;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    /* Optional: adds slight rounding */
 }
 
 /* Paragraph padding */
@@ -41,36 +61,29 @@ footer {
     border-top: 2px solid #ccc;
     text-align: center;
     padding: 20px 0;
-    /* Optional: adds vertical spacing */
-    background-color: #f9f9f9;
-    /* Optional: subtle background */
 }
 
-/* Additional styling for better overall appearance */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+/* h1 rule with color declaration */
+h1 {
+    color: #2c3e50;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-h1,
+/* Additional h2 styling (optional) */
 h2 {
-    color: #333;
+    color: #34495e;
 }
 
+/* Body styling for better appearance */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    background-color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #444;
+    margin-bottom: 20px;
 }
