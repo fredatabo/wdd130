@@ -1,0 +1,76 @@
+/* Main selector - limit its width */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Aside element styling */
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 15px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Images inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Profile image styling using parent selector */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    /* Optional: adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: adds subtle shadow */
+}
+
+/* Paragraph padding */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 20px 0;
+    /* Optional: adds vertical spacing */
+    background-color: #f9f9f9;
+    /* Optional: subtle background */
+}
+
+/* Additional styling for better overall appearance */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
