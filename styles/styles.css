@@ -1,3 +1,20 @@
+/* CSS Variables - only for repeated values */
+:root {
+    /* Repeated colors */
+    --primary-dark: #333;
+    /* Used in nav, aside border, main img border */
+    --text-dark: #333;
+    /* Used in aside color */
+    --border-light: #ccc;
+    /* Used in footer border-top */
+
+    /* Repeated spacing - padding and margin values that appear multiple times */
+    --spacing-sm: 15px;
+    /* Used in nav padding, aside padding */
+    --spacing-md: 20px;
+    /* Used in body padding, footer padding (20px 0), aside margin */
+}
+
 /* Main selector - limit its width */
 main {
     max-width: 1200px;
@@ -6,8 +23,8 @@ main {
 
 /* Nav rule with background-color and padding */
 nav {
-    background-color: #333;
-    padding: 15px;
+    background-color: var(--primary-dark);
+    padding: var(--spacing-sm);
 }
 
 /* Nav a rule with color, padding, and display: block */
@@ -21,33 +38,38 @@ nav a {
 /* Optional: nav a hover for better UX */
 nav a:hover {
     background-color: #555;
+    /* Only appears once - no variable needed */
 }
 
 /* Aside element styling */
 aside {
     width: 300px;
-    margin: 20px;
-    border: 1px solid #333;
-    padding: 15px;
+    /* Only appears once */
+    margin: var(--spacing-md);
+    border: 1px solid var(--primary-dark);
+    padding: var(--spacing-sm);
     background-color: #f5f5f5;
-    color: #333;
+    /* Only appears once */
+    color: var(--text-dark);
 }
 
 /* Images inside aside */
 aside img {
     width: 200px;
+    /* Only appears once */
     height: auto;
 }
 
 /* Main img rule with required declarations */
 main img {
     width: 150px;
+    /* Only appears once */
     height: auto;
-    border: 2px solid #333;
+    border: 2px solid var(--primary-dark);
     padding: 5px;
+    /* Only appears once */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    /* Optional: adds slight rounding */
 }
 
 /* Paragraph padding */
@@ -58,32 +80,39 @@ p {
 /* Footer styling */
 footer {
     margin-top: 30px;
-    border-top: 2px solid #ccc;
+    /* Only appears once */
+    border-top: 2px solid var(--border-light);
     text-align: center;
-    padding: 20px 0;
+    padding: var(--spacing-md) 0;
 }
 
 /* h1 rule with color declaration */
 h1 {
     color: #2c3e50;
+    /* Only appears once */
 }
 
 /* Additional h2 styling (optional) */
 h2 {
     color: #34495e;
+    /* Only appears once */
 }
 
 /* Body styling for better appearance */
 body {
     font-family: Arial, sans-serif;
+    /* Only appears once */
     line-height: 1.6;
+    /* Only appears once */
     margin: 0;
-    padding: 20px;
+    padding: var(--spacing-md);
     background-color: #fff;
+    /* Only appears once */
 }
 
 /* Header styling */
 header {
     background-color: #444;
-    margin-bottom: 20px;
+    /* Only appears once */
+    margin-bottom: var(--spacing-md);
 }
