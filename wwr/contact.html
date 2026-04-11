@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Us page for Wild Waters Rafting featuring our email, contact form, some employee profile information and a google map to locate us.">
+    <meta name="author" content="Frederick Atabo">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us | Wild Waters Rafting</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.jpg" alt="Wild Waters Rafting Company Logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Company information block (address, phone, email) -->
+        <section class="company-info-block">
+            <h2>Wild Waters Rafting</h2>
+            <address class="contact-address">
+                📍 Adventure Hub<br>
+                123 Main River Street<br>
+                Kolob, California 90210<br>
+                📞 Phone: +1 999 999 9999<br>
+                ✉️ Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+            </address>
+        </section>
+
+        <!-- 2. Two-column row: Google Map (left) + Contact Form (right) -->
+        <div class="map-form-row">
+            <!-- Google Map column -->
+            <div class="map-column">
+                <h3>Find Us Here</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://maps.google.com/?q=123+Main+River+Street+Kolob+CA&output=embed" 
+                        title="Google map showing Wild Waters Rafting location in Kolob, California"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form column -->
+            <div class="form-column">
+                <h3>Get in Touch!</h3>
+                <form action="#" method="post" class="rafting-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g., River Adventurer" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message Purpose *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="purpose" value="general" required> General Inquiry
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="purpose" value="reservation"> Reservation Question
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type here ..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="subscribe"> 
+                            📬 Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">✉️ Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 3. Employee profiles (heading centered) -->
+        <section class="employee-profiles">
+            <h2 class="centered-heading">We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure class="employee-card">
+                    <img src="images/pass1.png" alt="Portrait of John Mark, lead rafting guide" loading="lazy">
+                    <figcaption>
+                        <strong>John Mark</strong><br>
+                        Head River Guide & Safety Lead
+                    </figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/pass3.png" alt="Portrait of Mike Forest, safety officer" loading="lazy">
+                    <figcaption>
+                        <strong>Mike Forest</strong><br>
+                        Senior Safety Officer
+                    </figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/pass2.png" alt="Portrait of Thomas Abel, trip coordinator" loading="lazy">
+                    <figcaption>
+                        <strong>Thomas Abel</strong><br>
+                        Expedition Coordinator
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wild Waters Rafting | Frederick Atabo</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
